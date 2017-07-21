@@ -30,9 +30,8 @@ class MedianFilter:
         for x in calc_medianlist:
             medianlist.append(np.median(x))
 
-        #print "Medians after update are: "
+        print "Medians after update are: "
         medianlist = np.asfarray(medianlist)
-	print "Output: {0}".format(medianlist)
         #print medianlist
         self.counter += 1;
 
