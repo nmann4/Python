@@ -10,7 +10,8 @@ class MedianFilter:
         self.inputlist = [[] for x in xrange(D+1)]
                 
     def update(self, inputArray):
-
+	
+	#Replaces oldest scan in the list of D scans
         if(self.counter>self.D):
             self.counter = 0
         self.inputlist[self.counter] = inputArray
@@ -21,18 +22,18 @@ class MedianFilter:
             for index, item in enumerate(x):
                 calc_medianlist[index].append(item)
 
-        print "Calculating Median"
-	print "Input: {0}".format(inputArray)
-	time.sleep(3) #Delay to show updating of median
+        print "Calculating Median using previous {0} scans".format(self.D)
+	#print "Input: {0}".format(inputArray)
+	#Delay to watch the program run when updating
+	#time.sleep(3) 
 	
 	#Calculates Median
         medianlist = []
         for x in calc_medianlist:
             medianlist.append(np.median(x))
 
-        print "Medians after update are: "
         medianlist = np.asfarray(medianlist)
-        #print medianlist
+	#print "Output: {0}".format(medianlist)
         self.counter += 1;
 
         return medianlist
