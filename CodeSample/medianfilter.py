@@ -23,7 +23,7 @@ class MedianFilter:
                 calc_medianlist[index].append(item)
 
         #Calculates Median
-        print "Calculating Median using previous {0} scans".format(self.D)
+        print "Calculating Median using previous {0} scans or all scans so far".format(self.D)
         medianlist = []
         for x in calc_medianlist:
             medianlist.append(np.median(x))

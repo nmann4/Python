@@ -2,6 +2,7 @@ import numpy as np
 import rangefilter as rf
 import time
 
+
 range_min = input("Please enter the range minimum: ")
 range_max = input("Please enter the range maximum: ")
 
@@ -12,12 +13,10 @@ sampleArray = np.arange(-25.0,100.0,0.1)
 num_test_inputs = input("Please enter how many random inputs you wish to send to the filter: ")
 N = input("Please enter the dimension(length) of the random inputs: ")
 
-#Creates random input
 inputlist = [[] for x in xrange(num_test_inputs)]
 for x in xrange(num_test_inputs):
     inputlist[x] = np.random.choice(sampleArray,N,replace=True)
 
-#Filters incoming input
 for x in xrange(num_test_inputs):
     print "Input: {0}".format(inputlist[x])
     time.sleep(1.5)
