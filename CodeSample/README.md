@@ -29,7 +29,7 @@ TESTING
 
 Conclusion
 	
-	Overall I feel like I accomplished the task but there is always more functionality that can be added. I want to say that I treated this as a learning opportunity to learn more python as I have more years of experience in C++ than python.
+	Overall I feel like I accomplished the task but there is always more functionality that can be added. I want to say that I treated this as a learning opportunity to learn more python as I have more years of experience in C++ than python. I also want to say I think the functionality of the numpy library is amazing!
 
 
 References:
