@@ -23,7 +23,7 @@ TESTING
 
 	The range filter was tested by sending a random number of inputs that range from -25 to 100. If you wish to change the range of the random sample simply modify the line that creates the sampleArray. I understand negative values may not be common input but it allows us to see if filter is working correctly with a lower range minimum/higher range maximum.
 	
-	The median filter was tested by sending a random amount of inputs that ranges from 0 to 10. If you wish to change the range of the random sample simply modify the line that creates the sampleArray.
+	The median filter was tested by sending a random amount of inputs that ranges from 0 to 10. If you wish to change the range of the random sample simply modify the line that creates the sampleArray. The time delay was added to see that the object works correctly
 
 Conclusion
 	
